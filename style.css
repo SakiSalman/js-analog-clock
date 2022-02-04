@@ -1,0 +1,86 @@
+ *{
+     padding: 0;
+     margin: 0;
+ }
+
+ .clock {
+    width: 400px;
+    height: 400px;
+    margin: 100px auto 0;
+    background-image: url(https://thumbs.dreamstime.com/b/clock-face-blank-white-background-vector-illustration-isolated-78841292.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 10px;
+    border: 10px solid black;
+    box-shadow: -3px 1px 20px 11px #dddddd8c !important;
+};
+
+ .clock::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+ }
+
+ .s{
+
+     width: px;
+     height: 399px;
+     display: flex;
+     justify-content: center;
+ }
+
+ .s::before{
+     content: "";
+     width: 30px;
+     height: 220px;
+     position: absolute;
+     transform: rotate(0deg);
+     background-image: url(./images/second-hand.png);
+     background-size: cover;
+     z-index: 11;
+ }
+
+ .m{
+    width: 0px;
+    height: 296px;
+    background-color: blue;
+    transform: rotate(10deg);
+    display: flex;
+    justify-content: center;
+}
+
+.m::before{
+    content: "";
+    width: 50px;
+    height: 146px;
+    position: absolute;
+    background-image: url(./images/clock-598124_1280.png);
+    background-size: cover;
+    z-index: -1;
+}
+
+.h{
+    width: 0px;
+    height: 266px;
+    background-color: blue;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+}
+
+.h::before{
+    content: "";
+    width: 60px;
+    height: 162px;
+    position: absolute;
+    background-image: url(./images/pendulum-419044_1280.png);
+    background-size: cover;
+    z-index: 1;
+}
